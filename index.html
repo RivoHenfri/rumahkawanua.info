@@ -208,7 +208,8 @@
           <h2>TIPE GRAND VIOLA</h2>
           <p class="lead mb-0">LT/LB: 220M² / 200M²</p>
 		   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal1">Detail</button>
-		   <button type="button" class="btn btn-info" data-toggle="modal" data-target="#booking">Booking Sekarang</button>
+       <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#booking">Booking Sekarang</button>
+       <button type="button" class="btn btn-info" data-toggle="modal" data-target="#calculator">Simulasi KPR</button>
         </div>
       </div>
       <div class="row no-gutters">
@@ -217,7 +218,8 @@
           <h2>TIPE RUKO SUDUT</h2>
           <p class="lead mb-0">LT/LB: 5 X 15M² / 75M² </p>
 		  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">Detail</button>
-		  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#booking">Booking Sekarang</button>
+      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#booking">Booking Sekarang</button>
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#calculator">Simulasi KPR</button>
 		
         </div>
       </div>
@@ -228,7 +230,8 @@
           <h2>TIPE BIRMINGHAM</h2> <br />
           <p class="lead mb-0">LT/LB: 10 X 18M² / 110M²</p>
 		  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3">Detail</button>
-		  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#booking">Booking Sekarang</button>
+      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#booking">Booking Sekarang</button>
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#calculator">Simulasi KPR</button>
 		  
         </div>
       </div>
@@ -239,7 +242,8 @@
           <h2>TIPE BEVERLY</h2> <br />
           <p class="lead mb-0"> LT/LB:10 X 18M² / 10M²</p>
 		   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal4">Detail</button>
-		   <button type="button" class="btn btn-info" data-toggle="modal" data-target="#booking">Booking Sekarang</button>
+       <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#booking">Booking Sekarang</button>
+       <button type="button" class="btn btn-info" data-toggle="modal" data-target="#calculator">Simulasi KPR</button>
         </div>
       </div>
 	  
@@ -289,17 +293,17 @@
  <!-- Modal content container-->
         <div class="modal-content">
           <div class="modal-header">
-		  <h4 class="modal-title">Detail dan Spesifikasi Birmingham</h4>
+		        <h4 class="modal-title">Detail dan Spesifikasi Birmingham</h4>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <img src="img/detail_birmingham.jpg" class="img-fluid" alt="Grand Kawanua GVK Birmingham">
-			<a href="http://bit.ly/brosurGKIC" class="badge badge-success">Download Brosur</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
         </div>
+        <div class="modal-body">
+            <img src="img/detail_birmingham.jpg" class="img-fluid" alt="Grand Kawanua GVK Birmingham">
+		      	<a href="http://bit.ly/brosurGKIC" class="badge badge-success">Download Brosur</a>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
       
     </div>
   </div>
@@ -341,6 +345,43 @@
         </div>
       
     </div>
+  </div>
+   <!-- Modal calculator-->
+   <div class="modal fade" id="calculator" role="dialog">
+    <div class="modal-dialog">
+<!-- Modal content container-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Calculator / Simulasi KPR</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+          <!--calculator script-->
+          <form action="">
+                <div class="form-group">
+                  <label for="amt">Harga Rumah (Rp):</label>
+                  <input type="text" class="form-control" id="amt" name="amt">
+                </div>
+                <div class="form-group">
+                  <label for="trm">Jangka Waktu (Tahun):</label>
+                  <input type="text" class="form-control" id="trm" name="APR">
+                </div>
+                <div class="form-group">
+                  <label for="apr">Bunga per tahun (%):</label>
+                  <input type="text" class="form-control" id="apr" name="APR">
+                </div>
+                Perkiraan Angsuran Per Bulan (Rp) adalah <input type="text" id="pmt" name="mPmt"/>
+                <input type="button" id="sbt" value="Hitung" />
+                <input type="reset" id="rst" value="Reset" />
+               
+        </form>
+       
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
   </div>
 
   <!-- Testimonials -->
@@ -466,6 +507,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap/js/calc.js"></script>
   <script type="text/javascript">
     (function () {
         var options = {
