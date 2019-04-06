@@ -360,22 +360,28 @@
           <form action="">
                 <div class="form-group">
                   <label for="amt">Harga Rumah (Rp):</label>
+                  <small class="form-text text-muted">Contoh Input: 1000000000</small>
                   <input type="text" class="form-control" id="amt" name="amt">
+                  
                 </div>
                 <div class="form-group">
                   <label for="trm">Jangka Waktu (Tahun):</label>
+                  <small class="form-text text-muted">Contoh Input: 10</small>
                   <input type="text" class="form-control" id="trm" name="APR">
+                 
                 </div>
                 <div class="form-group">
                   <label for="apr">Bunga per tahun (%):</label>
+                  <small class="form-text text-muted">Contoh Input: 8</small>
                   <input type="text" class="form-control" id="apr" name="APR">
+                 
                 </div>
-                Perkiraan Angsuran Per Bulan (Rp) adalah <input type="text" id="pmt" name="mPmt"/>
                 <input type="button" id="sbt" value="Hitung" />
                 <input type="reset" id="rst" value="Reset" />
-               
+                <p class="font-weight-bold mb-0">
+                Perkiraan Angsuran Per Bulan (Rp) adalah<input type="text" id="pmt" name="mPmt"/> </p>
         </form>
-       
+        <small class="form-text text-muted font-italic">Disclaimer.The information provided by these calculators is for illustrative purposes only and accuracy is not guaranteed. The default figures shown are hypothetical and may not be applicable to your individual situation. Be sure to consult a financial professional prior to relying on the results.</small> 
       </div>
       <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
