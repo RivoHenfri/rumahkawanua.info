@@ -25,7 +25,8 @@ footer.footer {
 header.masthead {
     position: relative;
     background-color: #050606;
-    background: url(../img/privatepool_grandkawanua.jpg) no-repeat center center;
+    /*background: url(../img/privatepool_grandkawanua.jpg) no-repeat center center;*/
+	background: url(../img/ruko_gvk.jpg) no-repeat center center;
     background-size:cover ;
     padding-top: 8rem;
     padding-bottom: 8rem;
